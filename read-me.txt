@@ -1,0 +1,32 @@
+Welcome to Transcripto! Instructions for setup below. 
+By Ellen Tomlins
+CS 310 - Joe Hummel
+
+For server-side: 
+- Upload the Lambda functions:
+    - finalproj_upload.py
+    - finalproj_download.py
+    - transcribe.py
+    - text_to_speech.py
+    - translate.py
+- Make sure each Lambda function includes:
+    - datatier.py
+    - transcripto-app-config.ini
+- Set up API Gateway with:
+    - POST /upload
+    - POST /translate
+    - GET /results/{jobid}
+- Enable S3 trigger for:
+    - .mp3 upload, which should trigger transcription lambda
+    - .txt upload, which should trigger text-to-speech lambda
+
+To set up the database:
+- Establish sql server connection 
+- Run finalproj_jobsDB.sql
+
+For client-side: 
+- set up docker container (using _readme.txt)
+- within docker, run "python3 main.py"
+
+Example .mp3 input: use hello.mp3
+Example .txt input: use gettysburg_address.txt
