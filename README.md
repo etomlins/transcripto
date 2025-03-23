@@ -1,4 +1,4 @@
-# transcripto
+# Transcripto
 CS310 Final Project Winter 2025
 
 My project is called Transcripto, a web service designed to bridge the gap between different text and speech mediums as well as languages. The main problem I wanted to tackle is the annoyance of getting transcriptions from audio files. The general use case of the app is as follows: say I am an aspiring speechwriter, and I really like a quote in a speech I heard, but I only have the .mp3 file of the speech. Using Transcripto, I can convert that audio file into a transcript (.txt file), then I can translate that transcript into any language I want to share the quote with the world. Then, say I want to write my own speech, but before delivering it myself, I’d like to hear it read back to me to hear how it sounds out loud. Using Transcripto again, I can upload my .txt file and Transcripto will output an audio file dictating that speech to me.
