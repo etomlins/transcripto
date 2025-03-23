@@ -50,5 +50,5 @@ Status code 200 means that the operation succeeded, and the packet sent back to 
 'job_id': jobid,
 'results_url': f"https://{bucketname}.s3.amazonaws.com/{filename}"
 
-Database design:
+# Database design:
 This database keeps track of the jobs uploaded to the web service. When a job is uploaded via the API call /upload, it is inserted into the database with status ‘uploaded,’ and the status is updated accordingly as the job is processed, ending with either ‘completed’ or ‘error.’
